@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedSpire Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MedSpire</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#founders">Founders</a></li>
+                <li><a href="#appointment">Appointment</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1 style="color: #000000;">Welcome to MediCare Hospital</h1>
+            <p>Your health is our priority</p>
+            <a href="#appointment" class="cta-button">Book an Appointment</a>
+        </section>
+
+        <section id="about" class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>MediCare Hospital is a state-of-the-art medical facility dedicated to providing exceptional healthcare services. With cutting-edge technology and a team of expert medical professionals, we strive to deliver the best possible care to our patients.</p>
+                    <p>Our mission is to improve the health and well-being of our community through compassionate care, innovative treatments, and a patient-centered approach. We are committed to excellence in medical practice, research, and education.</p>
+                   <p>Our hospital is committed to offering our community caring and all-encompassing healthcare services. Our team of skilled medical professionals works in conjunction with cutting edge facilities to provide our patients with the best possible care. Our first goal is to provide a patient-centered atmosphere where your health and well-being are prioritized.</p> 
+                 <p> Our main motives are:-</p>
+                   <ul>
+                        <li>24/7 Emergency Services</li>
+                        <li>Advanced Diagnostic Imaging</li>
+                        <li>Specialized Treatment Programs</li>
+                        <li>Dedicated Patient Support</li>
+                        <li>High-quality healthcare that exceeds patient expectations</li>
+                        <li>Experienced and compassionate medical professionals</li>
+                        <li>Convenient location and accessible services</li>
+                        <li>Personalized care plans tailored to your needs</li>
+                    </ul>
+                </div>
+                <div class="about-images">
+                    <img src="/environment.jpg" alt="Modern hospital building" class="about-image">
+                    <img src="/inside.jpg" alt="Medical professionals in a consultation" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="founders" class="founders">
+            <h2>Our Founders</h2>
+            <div class="founder-cards">
+                <div class="founder-card">
+                    <img src="/arunmaskey.jpg" alt="Dr. Arun Maskey">
+                    <h3>Dr. Arun Maskey</h3>
+                    <p>Cardiologist</p>
+                </div>
+                <div class="founder-card">
+                    <img src="/Baburam.jpg" alt="Dr. Babu Ram Pokharel">
+                    <h3>Dr. Babu Ram Pokharel</h3>
+                    <p>Neurologist</p>
+                </div>
+                <div class="founder-card">
+                    <img src="/laxman.jpg" alt="Dr. Laxman Sigdel">
+                    <h3>Dr. Laxman Sigdel</h3>
+                    <p>Orthopedics</p>
+                </div>
+                <div class="founder-card">
+                    <img src="/Mandeep.jpg" alt="Dr. Mandeep Gautam.">
+                    <h3>Dr. Mandeep Gautam.</h3>
+                    <p>Pediatrics</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointment" class="appointment">
+            <h2>Book an Appointment</h2>
+            <form id="appointmentForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select a department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="neurology">Neurology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+                <button type="submit" id="submitBtn">Get Appointment</button>
+                <div id="thankYouMessage" class="hidden">
+                    <p>Thank you <span id="patientName"></span> for booking your appointment!</p>
+                </div>
+            </form>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Hospital Street, CCT, Butwal</p>
+                <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@medispire.com</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/spirehealthcare?mibextid=ZbWKwL" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://x.com/SpireWorcester" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/spire.healthcare?igsh=eHp4b3JwcG1nNjdz" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/companyc/spire-healthcare/?originalSubdomain=uk" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#founders">Founders</a></li>
+                    <li><a href="#appointment">Appointment</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li>Emergency Care</li>
+                    <li>Outpatient Services</li>
+                    <li>Laboratory Services</li>
+                    <li>Radiology Services</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for updates</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 MedSpire Hospital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
